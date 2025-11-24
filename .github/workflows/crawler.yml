@@ -9,9 +9,11 @@ on:
     - cron: "0 5 * * *"
     # 北京时间 18:30 (UTC 10:30)
     - cron: "30 10 * * *"
+  
+  # 允许手动点击按钮触发 (注意：它要和上面的 schedule 对齐)
   workflow_dispatch:
 
-# 添加权限设置
+# 权限设置 (注意：permissions 必须顶格写，不能缩进)
 permissions:
   contents: write
 
